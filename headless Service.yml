@@ -1,0 +1,14 @@
+apiVesion: v1 
+Kind: Service 
+metadata: 
+  name: headlessservice 
+spec: 
+  selector: 
+    matchlabels: 
+      app: spingboot 
+  ports: 
+    Port: 27017 
+    targetPort: 27017 
+  ClusterIP: none 
+
+  
